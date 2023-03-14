@@ -1,4 +1,4 @@
-baseURL = "/"
+baseURL = "https://apatientcomputersciencetutor.com/wp/"
 languageCode = "en-us"
 theme = "poison"
 paginate = 10
