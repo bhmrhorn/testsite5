@@ -6,11 +6,9 @@
             </a>
         {{ end }}
         {{ if .Site.Params.brand }}
-            <h2>
-                <a href="{{ .Site.BaseURL }}">
-                    {{ .Site.Params.brand }}
-                </a>
-            </h2>
+            <a href="{{ .Site.BaseURL }}">
+                {{ .Site.Params.brand }}
+            </a>
         {{ end }}
     </h1>
     <p class="lead">
