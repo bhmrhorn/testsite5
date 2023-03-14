@@ -23,18 +23,6 @@ title = "This is the site title"
         {Name = "Posts", URL = "/posts/", Pre = "Recent", HasChildren = true, Limit = 5},
     ]
 
-    # Links to your socials.  Delete any you don't need/use. 
-    github_url = "https://github.com"
-    gitlab_url = "https://gitlab.com"
-    linkedin_url = "https://linkedin.com"
-    twitter_url = "https://twitter.com"
-    mastodon_url = "https://mastodon.social"
-    tryhackme_url = "https://tryhackme.com"
-    discord_url = "https://discord.com"
-    youtube_url = "https://youtube.com"
-    instagram_url = "https://instagram.com"
-    facebook_url = "https://facebook.com"
-
     # Hex colors for your sidebar.
     sidebar_bg_color = "#202020"            # default is #202020
     sidebar_img_border_color = "#515151"    # default is #515151
