@@ -44,22 +44,22 @@
 {{ end }}
 
 <!-- Title Tags -->
-<title itemprop="name">{{ .Scratch.Get "title" }}</title>
+<title>{{ .Scratch.Get "title" }}</title>
 <meta property="og:title" content={{ .Scratch.Get "title" }} />
 <meta name="twitter:title" content={{ .Scratch.Get "title" }} />
-<meta itemprop="name" content={{ .Scratch.Get "title" }} />
+<meta content={{ .Scratch.Get "title" }} />
 <meta name="application-name" content={{ .Scratch.Get "title" }} />
 <meta property="og:site_name" content="{{ .Site.Title }}" />
 
 <!-- Description Tags -->
 <meta name="description" content="{{ .Scratch.Get "description" }}" />
-<meta itemprop="description" content="{{ .Scratch.Get "description" }}" />
+<meta content="{{ .Scratch.Get "description" }}" />
 <meta property="og:description" content="{{ .Scratch.Get "description" }}" />
 <meta name="twitter:description" content="{{ .Scratch.Get "description" }}" />
 
 <!-- Link Tags -->
 <base href="{{ .Permalink }}" />
-<link rel="canonical" href="{{ .Permalink }}" itemprop="url" />
+<link rel="canonical" href="{{ .Permalink }}" />
 <meta name="url" content="{{ .Permalink }}" />
 <meta name="twitter:url" content="{{ .Permalink }}" />
 <meta property="og:url" content="{{ .Permalink }}" />
