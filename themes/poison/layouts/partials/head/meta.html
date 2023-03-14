@@ -45,55 +45,55 @@
 
 <!-- Title Tags -->
 <title>{{ .Scratch.Get "title" }}</title>
-<meta property="og:title" content={{ .Scratch.Get "title" }} />
-<meta name="twitter:title" content={{ .Scratch.Get "title" }} />
-<meta name="application-name" content={{ .Scratch.Get "title" }} />
+<meta property="og:title" content={{ .Scratch.Get "title" }} >
+<meta name="twitter:title" content={{ .Scratch.Get "title" }} >
+<meta name="application-name" content={{ .Scratch.Get "title" }} >
 <meta property="og:site_name" content="{{ .Site.Title }}" />
 
 <!-- Description Tags -->
-<meta name="description" content="{{ .Scratch.Get "description" }}" />
-<meta property="og:description" content="{{ .Scratch.Get "description" }}" />
-<meta name="twitter:description" content="{{ .Scratch.Get "description" }}" />
+<meta name="description" content="{{ .Scratch.Get "description" }}" >
+<meta property="og:description" content="{{ .Scratch.Get "description" }}" >
+<meta name="twitter:description" content="{{ .Scratch.Get "description" }}" >
 
 <!-- Link Tags -->
 <base href="{{ .Permalink }}" />
-<link rel="canonical" href="{{ .Permalink }}" />
-<meta name="url" content="{{ .Permalink }}" />
-<meta name="twitter:url" content="{{ .Permalink }}" />
-<meta property="og:url" content="{{ .Permalink }}" />
+<link rel="canonical" href="{{ .Permalink }}" >
+<meta name="url" content="{{ .Permalink }}" >
+<meta name="twitter:url" content="{{ .Permalink }}" >
+<meta property="og:url" content="{{ .Permalink }}" >
 
 <!-- Image Tags -->
 {{ if $og_image }}
-<meta itemprop="image" content="{{ $og_image.Permalink }}" />
-<meta property="og:image" content="{{ $og_image.Permalink }}" />
-<meta property="og:image:width" content="{{ $og_image.Width }}" />
-<meta property="og:image:height" content="{{ $og_image.Height }}" />
-<meta name="twitter:image" content="{{ $og_image.Permalink }}" />
-<meta name="twitter:image:src" content="{{ $og_image.Permalink }}" />
+<meta itemprop="image" content="{{ $og_image.Permalink }}" >
+<meta property="og:image" content="{{ $og_image.Permalink }}" >
+<meta property="og:image:width" content="{{ $og_image.Width }}" >
+<meta property="og:image:height" content="{{ $og_image.Height }}" >
+<meta name="twitter:image" content="{{ $og_image.Permalink }}" >
+<meta name="twitter:image:src" content="{{ $og_image.Permalink }}" >
 {{ end }}
 
 <!-- Date Tags -->
-<meta property="og:updated_time" content={{ .Lastmod.Format "2001-02-03T14:05:06Z0700" | safeHTML }} />
+<meta property="og:updated_time" content={{ .Lastmod.Format "2001-02-03T14:05:06Z0700" | safeHTML }} >
 
 <!-- Sitemap & Alternate Outputs -->
-<link rel="sitemap" type="application/xml" title="Sitemap" href='{{ "sitemap.xml" | absURL }}' />
+<link rel="sitemap" type="application/xml" title="Sitemap" href='{{ "sitemap.xml" | absURL }}' >
 {{ range .AlternativeOutputFormats -}}
     {{ printf `<link href="%s" rel="%s" type="%s" title="%s" />` .Permalink .Rel .MediaType.Type $.Site.Title | safeHTML }}
 {{ end -}}
 
 <!-- Search Engine Crawler Tags -->
-<meta name="robots" content="index,follow" />
-<meta name="googlebot" content="index,follow" />
+<meta name="robots" content="index,follow" >
+<meta name="googlebot" content="index,follow" >
 
 <!-- Social Media Tags -->
-<meta name="twitter:site" content="{{ .Site.Params.twitter_url }}" />
-<meta name="twitter:creator" content="{{ .Site.Params.twitter_url }}" />
-<meta property="fb:admins" content="{{ .Site.Params.fb.admins }}" />
+<meta name="twitter:site" content="{{ .Site.Params.twitter_url }}" >
+<meta name="twitter:creator" content="{{ .Site.Params.twitter_url }}" >
+<meta property="fb:admins" content="{{ .Site.Params.fb.admins }}" >
 
 <!-- Other Tags -->
-<meta name="apple-mobile-web-app-title" content="{{ .Site.Title }}" />
-<meta name="apple-mobile-web-app-capable" content="yes" />
-<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta name="apple-mobile-web-app-title" content="{{ .Site.Title }}" >
+<meta name="apple-mobile-web-app-capable" content="yes" >
+<meta name="apple-mobile-web-app-status-bar-style" content="black" >
 
 <!-- Article Specific Tags -->
 <!-- To make sure this renders only in the article page, we check the section -->
@@ -101,30 +101,30 @@
 <!-- Pagination meta tags for list pages only -->
 {{ $paginator := .Paginate (where .Pages "Type" "posts") }} 
 {{ if $paginator }}
-  <link rel="first" href="{{ $paginator.First.URL }}" />
-  <link rel="last" href="{{ $paginator.Last.URL }}" />
+  <link rel="first" href="{{ $paginator.First.URL }}" >
+  <link rel="last" href="{{ $paginator.Last.URL }}" >
   {{ if $paginator.HasPrev }}
-    <link rel="prev" href="{{ $paginator.Prev.URL }}" />
+    <link rel="prev" href="{{ $paginator.Prev.URL }}" >
   {{end }}
   {{ if $paginator.HasNext }}
-    <link rel="next" href="{{ $paginator.Next.URL }}" />
+    <link rel="next" href="{{ $paginator.Next.URL }}" >
   {{end }}
 {{end }}
 
-<meta property="og:type" content="article" />
-<meta property="article:publisher" content="{{ .Site.Params.facebook_url }}" />
-<meta property="og:article:published_time" content={{ .Date.Format "2001-02-03T14:05:06Z0700" | safeHTML }} />
-<meta property="article:published_time" content={{ .Date.Format "2001-02-03T14:05:06Z0700" | safeHTML }} />
+<meta property="og:type" content="article" >
+<meta property="article:publisher" content="{{ .Site.Params.facebook_url }}" >
+<meta property="og:article:published_time" content={{ .Date.Format "2001-02-03T14:05:06Z0700" | safeHTML }} >
+<meta property="article:published_time" content={{ .Date.Format "2001-02-03T14:05:06Z0700" | safeHTML }} >
 
 {{ with.Params.author }}
-  <meta property="og:article:author" content="{{humanize . }}" />
-  <meta property="article:author" content="{{humanize . }}" />
-  <meta name="author" content="{{humanize . }}" />
+  <meta property="og:article:author" content="{{humanize . }}" >
+  <meta property="article:author" content="{{humanize . }}" >
+  <meta name="author" content="{{humanize . }}" >
 {{ end }}
 
 {{ with.Params.category }}
-  <meta name="news_keywords" content="{{ index . 0 }}" />
-  <meta property="article:section" content="{{ index . 0 }}" />
+  <meta name="news_keywords" content="{{ index . 0 }}" >
+  <meta property="article:section" content="{{ index . 0 }}" >
 {{ end }}
 
 <script type="application/ld+json">
@@ -158,8 +158,8 @@
 {{ else }}
 
 <!-- Content (non-blog/article) specific tags, for pages such as /contact or /about -->
-<meta property="og:type" content="website" />
-<meta name="author" content="{{ .Site.Params.author }}" />
+<meta property="og:type" content="website" >
+<meta name="author" content="{{ .Site.Params.author }}" >
 <script type="application/ld+json">
   {
     {
