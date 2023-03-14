@@ -48,7 +48,7 @@
 <meta property="og:title" content={{ .Scratch.Get "title" }} >
 <meta name="twitter:title" content={{ .Scratch.Get "title" }} >
 <meta name="application-name" content={{ .Scratch.Get "title" }} >
-<meta property="og:site_name" content="{{ .Site.Title }}" />
+<meta property="og:site_name" content="{{ .Site.Title }}" >
 
 <!-- Description Tags -->
 <meta name="description" content="{{ .Scratch.Get "description" }}" >
@@ -56,7 +56,7 @@
 <meta name="twitter:description" content="{{ .Scratch.Get "description" }}" >
 
 <!-- Link Tags -->
-<base href="{{ .Permalink }}" />
+<base href="{{ .Permalink }}" >
 <link rel="canonical" href="{{ .Permalink }}" >
 <meta name="url" content="{{ .Permalink }}" >
 <meta name="twitter:url" content="{{ .Permalink }}" >
@@ -78,7 +78,7 @@
 <!-- Sitemap & Alternate Outputs -->
 <link rel="sitemap" type="application/xml" title="Sitemap" href='{{ "sitemap.xml" | absURL }}' >
 {{ range .AlternativeOutputFormats -}}
-    {{ printf `<link href="%s" rel="%s" type="%s" title="%s" />` .Permalink .Rel .MediaType.Type $.Site.Title | safeHTML }}
+    {{ printf `<link href="%s" rel="%s" type="%s" title="%s" >` .Permalink .Rel .MediaType.Type $.Site.Title | safeHTML }}
 {{ end -}}
 
 <!-- Search Engine Crawler Tags -->
