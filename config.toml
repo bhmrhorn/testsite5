@@ -7,7 +7,7 @@ publishDir = "public/wp"
 title = "This is the site title"
 
 [params]
-    brand = "Poison"                      # name of your site - appears in the sidebar
+    brand = "/* mrHorn */"                      # name of your site - appears in the sidebar
     # brand_image = "/images/test.jpg"    # path to the image shown in the sidebar
     description = "This is the site description"
     dark_mode = true                      # optional - defaults to false
@@ -19,8 +19,7 @@ title = "This is the site title"
         # HasChildren:  If the directory's files should be listed.  Default is true.
         # Limit:        If the files should be listed, how many should be shown.
     menu = [
-        {Name = "About", URL = "/about/", HasChildren = false},
-        {Name = "Posts", URL = "/posts/", Pre = "Recent", HasChildren = true, Limit = 5},
+        
     ]
 
     # Hex colors for your sidebar.
