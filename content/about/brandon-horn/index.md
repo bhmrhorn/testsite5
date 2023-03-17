@@ -4,8 +4,6 @@ date: 2023-03-15T13:09:15-04:00
 draft: false
 ---
 
-[Contact Brandon Horn](/wp/contact/)
-
 ## Education and Professional Certifications
 
 In 2009, I earned a Master's in Educational Administration from Rider University in Lawrenceville, NJ. I graduated with distinction (GPA: 3.9).
