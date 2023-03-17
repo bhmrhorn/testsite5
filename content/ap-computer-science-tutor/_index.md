@@ -100,6 +100,10 @@ My services offer substantial advantages over tutoring by college students, prof
 
 ## Mr. Horn's AP Computer Science A Exam Results
 
+| CS A Exam @ Wayne Hills | 5 | 4 or higher |
+| --- | --- | --- | --- |
+| 2021 (my first year - 10 students) | 90.0% | ← |
+
 | CS A Exam @ Mountain Lakes | 5 | 4 or higher |
 | --- | --- | --- |
 | 2020 (19 students) | 89.5% | ← |
@@ -107,11 +111,6 @@ My services offer substantial advantages over tutoring by college students, prof
 | 2018 (9 students) | 77.8% | 100.0% |
 | 2017 (8 students) | 100.0%  | ← |
 | 2016 (my first year - 5 students) | 40.0% | 100.0% |
-
-| CS A Exam Worldwide | 5 | 4 or higher |
-| --- | --- | --- |
-| 2017 (~61,000 students) | 24.4% | 45.3% |
-| 2016 (55,425 students) | 20.6% | 41.0% |
 
 | CS A Exam @ West Windsor - Plainsboro | 5 | 4 or higher |
 | --- | --- | --- |
