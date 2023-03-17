@@ -15,4 +15,4 @@ Private (one-on-one) sessions can be structured as needed. Instruction on topics
 
 - Experienced CS teacher; Google CAPE instructor
 - 2016 <a href="https://aphighered.collegeboard.org/exams/scoring">[AP Standards Setting Committee](https://aphighered.collegeboard.org/exams/scoring) Member
-- Proven [success on the AP Exam](/wp/) NEED REAL LINK TO EXAM RESULTS - Very high quality [AP CS practice problems](https://apcomputersciencetutoring.com/)
+- Proven [success on the AP Exam](/wp/ap-computer-science-tutor/exam-results/) - Very high quality [AP CS practice problems](https://apcomputersciencetutoring.com/)
