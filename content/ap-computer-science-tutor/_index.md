@@ -102,7 +102,7 @@ My services offer substantial advantages over tutoring by college students, prof
 
 | CS A Exam @ Wayne Hills | 5 | 4 or higher |
 | --- | --- | --- | --- |
-| 2021 (my first year - 10 students) | 90.0% | ← |
+| 2022 (my first year - 10 students) | 90.0% | ← |
 
 | CS A Exam @ Mountain Lakes | 5 | 4 or higher |
 | --- | --- | --- |

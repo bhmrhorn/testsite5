@@ -8,7 +8,7 @@ draft: false
 
 | CS A Exam | 5 | 4 or higher | 3 or higher |
 | --- | --- | --- | --- |
-| 2021 (my first year - 10 students) | 90.0% | ← | 100.0% |
+| 2022 (my first year - 10 students) | 90.0% | ← | 100.0% |
 
 ## Mountain Lakes HS
 
