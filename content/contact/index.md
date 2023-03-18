@@ -2,6 +2,7 @@
 title: "Contact Brandon Horn"
 date: 2023-03-15T13:07:40-04:00
 draft: false
+hide_from_google: true
 ---
 
 Reply time is almost always within 24 hours. If you haven't received a reply within 24 hours either your message or my response was likely marked as spam. Please reach out via a different method.
