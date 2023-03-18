@@ -81,10 +81,6 @@
     {{ printf `<link href="%s" rel="%s" type="%s" title="%s" >` .Permalink .Rel .MediaType.Type $.Site.Title | safeHTML }}
 {{ end -}}
 
-<!-- Search Engine Crawler Tags -->
-<meta name="robots" content="index,follow" >
-<meta name="googlebot" content="index,follow" >
-
 <!-- Social Media Tags -->
 <meta name="twitter:site" content="{{ .Site.Params.twitter_url }}" >
 <meta name="twitter:creator" content="{{ .Site.Params.twitter_url }}" >
