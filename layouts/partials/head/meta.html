@@ -13,15 +13,11 @@
 {{ end }} 
 
 {{ if .IsSection }}
-  {{ .Scratch.Set "title" (.LinkTitle | humanize | title) }}
-  {{ .Scratch.Add "title" " - " }}
-  {{ .Scratch.Add "title" .Site.Title }}
+  {{ .Scratch.Set "title" (.LinkTitle) }}
 {{ end }} 
 
 {{ if .IsPage }}
-  {{ .Scratch.Set "title" (.Title | humanize | title) }}
-  {{ .Scratch.Add "title" " - " }}
-  {{ .Scratch.Add "title" .Site.Title }}
+  {{ .Scratch.Set "title" (.Title) }}
 {{ end }} 
 
 {{ $og_image := .Resources.Get .Params.image }}
