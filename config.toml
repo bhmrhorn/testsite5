@@ -1,9 +1,9 @@
-baseURL = "https://apatientcomputersciencetutor.com/wp/"
+baseURL = "https://www.apatientcomputersciencetutor.com/"
 languageCode = "en-us"
 theme = "poison"
 paginate = 10
 pluralizelisttitles = false   # removes the automatically appended "s" on sidebar entries
-publishDir = "public/wp"
+publishDir = "public"
 title = "AP Computer Science Tutoring"
 
 [params]
